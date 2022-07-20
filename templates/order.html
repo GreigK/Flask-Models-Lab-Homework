@@ -8,13 +8,10 @@
 </head>
 <body>
     <h1> The order list</h1>
-    {% for order in all_order %}
         <section>
-            <p><a href="{{ url_for('order_list') }}">
-                {{ order.name }}: <b>{{ order.order_date }}</b>: <b>{{ order.quantity }}</b>
-                </a>
+            <p>
+                {{ orders.name }}: <b>{{ orders.order_date }}</b>: <b>{{ orders.quantity }}</b>
             </p>
         </section>
-    {% endfor %}
 </body>
 </html>
